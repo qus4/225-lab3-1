@@ -4,10 +4,10 @@ pipeline {
 
     environment {
         DOCKER_CREDENTIALS_ID = 'roseaw-dockerhub'                                 // <------DON'T change this
-        DOCKER_IMAGE = 'cithit/qus4'                                                 // <------change this
+        DOCKER_IMAGE = 'cithit/qus4-225'                                                 // <------change this
         IMAGE_TAG = "build-${BUILD_NUMBER}"
         GITHUB_URL = 'https://github.com/qus4/225-lab3-1.git'                   // <------change this
-        KUBECONFIG = credentials('qus4')                                             // <------change this
+        KUBECONFIG = credentials('qus4-225')                                             // <------change this
     }
 
     stages {
